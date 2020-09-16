@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Realtime search demo</title>
+</head>
+<body>
+    <input type="search" placeholder="search..." (keyup)="updateResult($event.target.value)"/>
+    <ul id="result-list" *ngIf="!firstInit">
+        <li *ngFor="let result of searchService.resultArr">{{result}}</li>
+    </ul>
+    <ul id="result-list" *ngIf="firstInit">
+        <li *ngFor="let item of searchService.arr">{{item}}</li>
+    </ul>
+</body>
+</html>

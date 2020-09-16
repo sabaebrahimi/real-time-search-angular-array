@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "realTime"
+    }
+  },
+  "defaultProject": "realTime",
+  "cli": {
+    "analytics": false
+  }
 }
